@@ -1,0 +1,331 @@
+<html>
+<head>
+<title> my form</title>
+</head>
+<style>
+table, th, td { border: 1px solid black;}
+th{
+  background-color:#0090b8;
+color:white;
+}
+form{
+float:center;
+}
+.container {
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+       
+}
+th, td { border: 1px solid black; padding:8px;}
+
+</style>
+<body>
+<div class="container">
+<form action="/submit-page.php" method="POST">
+<table>
+   <tr>
+      <th colspan="3">1. Registration form</th>
+   </tr>
+  <tr>
+     <td>1.0</td>
+     <td>Have you got online reference number for enrolment with
+NIELIT/Accreditation/Extension Center</td>
+    <td>
+ <input type="radio"  name="choose" value="Yes">
+<label >Yes</label>
+<input type="radio" name="choose" value="No">
+<label>No</label>
+</td>
+  </tr>
+<tr>
+     <td>1.1</td>
+     <td>Registration sought for</td>
+    <td>
+             <select name="soughts" id="soughts">
+            <option value="0">0 LEVEL</option>
+            <option value="1">1 LEVEL</option>
+           <option value="2">2 LEVEL</option>
+           <option value="3">3 LEVEL</option>
+           </select>
+    </td>
+  </tr>
+<tr>
+     <td>1.2</td>
+     <td>Applied As</td>
+    <td>
+           <input type="radio" name="Applied" value="Direct Candidate">
+          <label >Direct Candidate</label>
+          <input type="radio" name="Applied" value="Through Institute">
+          <label >Through Institute</label>
+
+    </td>
+  </tr>
+<tr>
+     <td>1.3</td>
+     <td>Exam Cycle</td>
+    <td>
+           <input type="radio" name="Applied" value="Direct Candidate">
+          <label >Direct Candidate</label>
+          <input type="radio" name="Applied" value="Through Institute">
+          <label >Through Institute</label>
+
+    </td>
+  </tr>
+<tr>
+     <td>1.4</td>
+     <td>Registration Fee Will Be Paid By?</td>
+    <td>
+     <button>Candidate Direct to NIELIT</button>
+    </td>
+  </tr>
+   <tr>
+      <th colspan="3">2. Applicant's Personal Details</th>
+   </tr>
+  <tr>
+     <td>2.1</td>
+     <td>Applicant's full name</td>
+    <td>
+        <select name="type" id="type">
+            <option value="mr">Mr</option>
+            <option value="ms">Ms</option>
+           <option value="2">Other</option>
+       </select>
+   <input type ="text" >
+
+    </td>
+  </tr>
+<tr>
+     <td>2.2</td>
+     <td>Care Of</td>
+    <td>
+        <input type="radio" name="careof" value="Parents">
+          <label >Parents</label>
+          <input type="radio" name="careof" value="Guardian">
+          <label >Guardian </label>
+
+    </td>
+  </tr>
+<tr>
+     <td>2.2.1</td>
+     <td>Father Name</td>
+    <td>
+        <select name="ftitle" id="title">
+            <option value="mr">Mr</option>
+         </select>
+   <input type ="text" >
+
+    </td>
+  </tr>
+<tr>
+     <td>2.2.2</td>
+     <td>Mother Name</td>
+    <td>
+        <select name="ftitle" id="title">
+            <option value="ms">Ms</option>
+         </select>
+   <input type ="text" >
+
+    </td>
+  </tr>
+<tr>
+     <td>2.3</td>
+     <td>gender</td>
+    <td>
+        <input type="radio" name="gender" value="Male">
+          <label >Male</label>
+          <input type="radio" name="gender" value="female">
+          <label >female</label>
+         <input type="radio" name="gender" value="other">
+          <label >other</label>
+    </td>
+  </tr>
+<tr>
+     <td>2.4</td>
+     <td>Date of Birth</td>
+    <td>
+       <input type="date" id="birthday" name="birthday">
+    </td>
+  </tr>
+<tr>
+     <td>2.5</td>
+     <td>Marital Status</td>
+    <td>
+       <select name="maritalstatus" id="mtstats">
+            <option value="Single">Single</option>
+            <option value="married">married</option>
+           <option value="Divorsed">Divorced</option>
+           <option value="widow">widow</option>
+       </select>
+
+    </td>
+  </tr>
+<tr>
+     <td>2.6</td>
+     <td>Caegory</td>
+    <td>
+       <select name="category" id="cate">
+            <option value="General">general</option>
+            <option value="OBC">OBC</option>
+           <option value="SC">Sc</option>
+           <option value="ST">St</option>
+       </select>
+
+    </td>
+  </tr>
+<tr>
+     <td>2.7</td>
+     <td>Handicapped</td>
+    <td>
+       <input type="radio"  name="handic" value="Yes">
+<label >Yes</label>
+<input type="radio" name="handic" value="No">
+<label>No</label>
+
+     </td>
+  </tr>
+<tr>
+     <td>2.8</td>
+     <td>Ex-Serviceman</td>
+    <td>
+       <input type="radio"  name="exser" value="Yes">
+<label >Yes</label>
+<input type="radio" name="exser" value="No">
+<label>No</label>
+
+     </td>
+  </tr>
+<tr>
+     <td>2.9</td>
+     <td>EWS</td>
+    <td>
+       <input type="radio"  name="EWS" value="Yes">
+<label >Yes</label>
+<input type="radio" name="EWS" value="No">
+<label>No</label>
+
+     </td>
+  </tr>
+<tr>
+     <td>2.10</td>
+     <td>Religion</td>
+    <td>
+       <select name="religion" id="reg">
+             <option >--Select--</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+           <option value="Jainism">Jainism</option>
+           <option value="Christainity">Christainity</option>
+       </select>
+
+
+     </td>
+  </tr>
+<tr>
+<th colspan="3">3.Contact Details</th>
+</tr>
+<tr>
+     <td>3.1</td>
+     <td>Mobile Number</td>
+    <td>
+      <input type="text">
+     </td>
+  </tr>
+<tr>
+     <td>3.2</td>
+     <td>Email ID</td>
+    <td>
+      <input type="text">
+     </td>
+  </tr>
+<tr>
+     <td>3.3</td>
+     <td>Address Line 1</td>
+    <td>
+      <input type="text">
+     </td>
+  </tr>
+<tr>
+     <td>3.4</td>
+     <td>Address Line 2</td>
+    <td>
+      <input type="text">
+     </td>
+  </tr>
+<tr>
+     <td>3.5</td>
+     <td>City</td>
+    <td>
+      <input type="text">
+     </td>
+  </tr>
+<tr>
+     <td>3.6</td>
+     <td>State</td>
+    <td>
+      <select name="State" id="state">
+             <option >--Select--</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Jharkhand">Jharkhand</option>
+           <option value="Gujarat">Gujarat</option>
+           <option value="maharashtra">maharashtra</option>
+       </select>
+
+     </td>
+  </tr>
+<tr>
+     <td>3.7</td>
+     <td>PIN Code</td>
+    <td>
+      <input type="text">
+     </td>
+  </tr>
+<th colspan="3">4.Educational / Qualification Details</th>
+
+<tr>
+     <td>4.1</td>
+     <td>Highest Educational Qualification</td>
+    <td>
+      <select name="qualification" id="quali">
+             <option >--Select--</option>
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+           <option value="Graduation">graduation</option>
+           <option value="PG">PG</option>
+       </select>
+
+     </td>
+  </tr>
+<tr>
+     <td>4.2</td>
+     <td>year of passing</td>
+    <td>
+      <input type="text">
+     </td>
+  </tr>
+<tr>
+<th colspan="3">5. Identification Details</th>
+</tr>
+<tr>
+    <td>5.1</td>
+     <td>Adhar No</td>
+    <td>
+      <input type="text">
+     </td>
+  </tr>
+<tr>
+    <td>5.2</td>
+     <td>upload Photo</td>
+    <td>
+    <label for="fileToUpload"></label>
+  <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+     </td>
+  </tr>
+    <tr>
+    <th colspan="3"><input type="submit"></th>
+    </tr>
+</table>
+</form>
+</div>
+</body>
+</html>
